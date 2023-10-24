@@ -3,7 +3,7 @@
 const audioElement = document.createElement("audio");
 
 function playSound(soundFile) {
-    audioElement.src = `sounds/`;
+    audioElement.src = `./sounds/${soundFile}`;
     audioElement.play();
 }
 
