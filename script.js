@@ -1,6 +1,12 @@
 //your JS code here. If required.
-const arr = document.getElementByClassName("btn");
-for(let i = 0; i < arr.length; i++){
-	arr[i].addEventListener("click",expectPlayingAudio();)
+
+const audioElement = document.createElement("audio");
+
+function playSound(soundFile) {
+    audioElement.src = `sounds/${soundFile}`;
+    audioElement.play();
 }
-const stop =  document.getElementByClassName("stop");
+
+function stopSound() {
+    audioElement.pause();
+}

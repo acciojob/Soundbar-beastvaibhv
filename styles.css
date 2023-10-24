@@ -11,12 +11,14 @@ body{
 	justify-content: center;
 	align-items:center;
 }
-.btn{
+.btn, .stop{
 	background-color:rebeccapurple;
+	width: 10%;
 	color: white;
 	text-align:center;
 	padding: 10px;
 	border: none;
 	margin: 20px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
+
